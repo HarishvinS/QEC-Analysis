@@ -2,16 +2,16 @@
 
 A platform for simulating 2D surface codes, noise modeling, and fundamental quantum algorithms. This project leverages Stim, PyMatching, and Sinter to provide high-precision analysis of fault-tolerant quantum computing systems.
 
-## Key Features
+## What this does
 
 - **2D Rotated Surface Codes**: Implementation of industry-standard topological codes with integrated X and Z stabilizer measurements.
 - **Fault-Tolerant Memory**: Simulation of quantum memory experiments to determine logical error suppression.
 - **Quantum Algorithms**: 
     - **Shor's Algorithm**: Efficient circuit for integer factorization (factoring 15).
     - **Grover's Search**: Quadratic speedup for unstructured database searching.
-- **Realistic Noise Modeling**: Integrated depolarizing noise, measurement flips, and reset errors based on physical hardware benchmarks.
+- **Noise Modeling**: Integrated depolarizing noise, measurement flips, and reset errors based on physical hardware benchmarks.
 - **Threshold Analysis**: Automated detection of error correction thresholds and code-distance scaling.
-- **Publication-Quality Visualizations**: Comprehensive plotting suite for error rates, resource scaling, and algorithm success probabilities.
+- **Visualizations**: Comprehensive plotting suite for error rates, resource scaling, and algorithm success probabilities.
 
 ## Project Structure
 
@@ -19,8 +19,8 @@ A platform for simulating 2D surface codes, noise modeling, and fundamental quan
 - `quantum_algorithms.py`: Implementation of Shor's (QFT-based) and Grover's search.
 - `noise_models.py`: Support for custom noise channels and error rate estimations.
 - `validation.py`: Statistical analysis, PyMatching integration, and threshold calculation.
-- `visualization.py`: Suite of publication-ready plotting tools.
-- `main.py`: Orchestration of full-scale parameter sweeps and analysis.
+- `visualization.py`: Grahpical visualization feature.
+- `main.py`: Full-scale parameter sweeps and analysis.
 
 ## Quick Start
 
@@ -49,7 +49,7 @@ python main_simple.py
 ## Technical Details
 
 ### Surface Code Performance
-The project uses the Rotated Surface Code, which is the leading candidate for modern quantum processors. By scaling the Code Distance ($d$), the system demonstrates how logical errors are exponentially suppressed below the Error Correction Threshold (typically observed at ~0.7%).
+The project uses the Rotated Surface Code. By scaling the Code Distance ($d$), the system exhibits how logical errors are exponentially suppressed below the Error Correction Threshold (typically observed at ~0.7%).
 
 ### Algorithm Implementations
 - **Shor's Algorithm (N=15)**: A mathematically rigorous implementation of the $a^x \pmod{15}$ circuit using controlled-swap permutations (Fredkin gates).
