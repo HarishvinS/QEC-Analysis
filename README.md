@@ -13,6 +13,9 @@ A platform for simulating 2D surface codes, noise modeling, and fundamental quan
 - **Threshold Analysis**: Automated detection of error correction thresholds and code-distance scaling.
 - **Visualizations**: Comprehensive plotting suite for error rates, resource scaling, and algorithm success probabilities.
 
+## Greater Goal
+The goal of this project is to analyze the performance of various quantum error correction schemes and utilize the generated data to optimize surface codes. By identifying thresholds and resource scaling behaviors, we may be able to design more efficient fault-tolerant architectures.
+
 ## Project Structure
 
 - `surface_code.py`: Generation of rotated surface code circuits using Stim.
